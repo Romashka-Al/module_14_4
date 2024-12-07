@@ -8,7 +8,7 @@ import asyncio
 from crud_functions import *
 
 
-api = '7574431563:AAGrFnY9OL0EbMoC_QMXhaCm2it7M_ywJCQ'
+api = ''
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
