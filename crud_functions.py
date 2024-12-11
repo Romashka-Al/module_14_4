@@ -33,15 +33,13 @@ def get_all_products():
 
     cursor.execute('SELECT * FROM Products')
     connection.commit()
-    users = cursor.fetchall()
+    products = cursor.fetchall()
     ans = []
-    for user in users:
-        print(user)
-        ans.append(user)
-    return ans
-
-    connection.commit()
+    for product in products:
+        print(product)
+        ans.append(product)
     connection.close()
+    return ans
 
 
 connection.commit()
